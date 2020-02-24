@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PostControlador@index');
+Route::post('/', 'PostControlador@store');
